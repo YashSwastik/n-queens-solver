@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #d8c3a5, #bfa27a);
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* BOARD */
+.board {
+  margin: 20px auto;
+  width: min(85vmin, 700px);
+  height: min(85vmin, 700px);
+  display: grid;
+  border: 6px solid #3e2f1c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Slight dim before solving */
+.board.empty {
+  opacity: 0.9;
+}
+
+/* CELLS */
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COLORS */
+.white {
+  background: #f0d9b5;
+}
+
+.black {
+  background: #b58863;
+}
+
+/* RESPONSIVE QUEEN */
+.queen {
+  font-size: calc(60vmin / var(--n));
+  color: black;
+  animation: pop 0.3s ease;
+}
+
+/* ANIMATION */
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* BUTTONS */
+button {
+  background: #8b5e34;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin: 8px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  min-width: 120px;
+}
+
+button:hover {
+  background: #6f4624;
+  transform: translateY(-2px);
+}
+
+.top-buttons {
+  margin-top: 10px;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
