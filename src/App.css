@@ -1,88 +1,31 @@
-body {
+/* ── Global Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #d8c3a5, #bfa27a);
-  text-align: center;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #0a0a0f;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  padding: 20px;
-}
-
-/* BOARD */
-.board {
-  margin: 20px auto;
-  width: min(85vmin, 700px);
-  height: min(85vmin, 700px);
-  display: grid;
-  border: 6px solid #3e2f1c;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-/* Slight dim before solving */
-.board.empty {
-  opacity: 0.9;
-}
-
-/* CELLS */
-.cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* COLORS */
-.white {
-  background: #f0d9b5;
-}
-
-.black {
-  background: #b58863;
-}
-
-/* RESPONSIVE QUEEN */
-.queen {
-  font-size: calc(60vmin / var(--n));
-  color: black;
-  animation: pop 0.3s ease;
-}
-
-/* ANIMATION */
-@keyframes pop {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* BUTTONS */
+/* Remove default button styles — components apply their own */
 button {
-  background: #8b5e34;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  margin: 8px;
-  border-radius: 10px;
-  font-size: 15px;
+  font-family: inherit;
   cursor: pointer;
-  transition: 0.2s;
-  min-width: 120px;
 }
 
-button:hover {
-  background: #6f4624;
-  transform: translateY(-2px);
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 5px;
+  background: #0a0a0f;
 }
-
-.top-buttons {
-  margin-top: 10px;
-}
-
-.nav-buttons {
-  margin-top: 20px;
+::-webkit-scrollbar-thumb {
+  background: rgba(226, 201, 126, 0.25);
+  border-radius: 99px;
 }
