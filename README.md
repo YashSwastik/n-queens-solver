@@ -1,16 +1,45 @@
-# React + Vite
+# ♟️ N-Queens Visualizer (3D Interactive)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive and visually rich N-Queens solver built using React and Three.js.  
+This project combines algorithm visualization with cinematic UI and 3D rendering.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+🔗 https://your-vercel-link.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎬 Scroll-based cinematic landing page
+- 🧠 N-Queens solver using backtracking
+- ♟️ Fully interactive 3D chessboard
+- 👑 Realistic 3D queen models
+- 🔄 Smooth transitions between solutions
+- 🎯 Dynamic board generation for any N
+- ⚡ Fast and responsive UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Tech Stack
+
+- React (Vite)
+- Three.js
+- React Three Fiber
+- Drei
+- JavaScript (ES6)
+
+---
+
+## 🧠 How It Works
+
+- Uses backtracking to compute all valid N-Queens solutions
+- Dynamically generates an NxN chessboard
+- Animates queen placement:
+  - First solution → drop animation
+  - Next solutions → smooth transitions
+
+---
+
+## 📁 Project Structure
